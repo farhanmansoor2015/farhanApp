@@ -1,0 +1,4 @@
+<head>
+<title><%= @title %></title>
+</head>
+<p><b>For any Query<br></b><br> Contact me on farhancomputertech.tk</p></br>

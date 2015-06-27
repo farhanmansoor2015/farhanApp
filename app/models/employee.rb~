@@ -1,0 +1,4 @@
+class Employee < ActiveRecord::Base
+  belongs_to :department
+  validates_length_of :Phone, :is => 11
+end

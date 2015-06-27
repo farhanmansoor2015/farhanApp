@@ -1,0 +1,15 @@
+class CreateDegrees < ActiveRecord::Migration
+  def change
+    create_table :degrees do |t|
+      t.string :ProgramName
+      t.date:ProgramDate
+      t.integer :Semester
+      t.integer :Fee
+      t.integer :StudentStrength
+      t.string :ClassRoom
+      t.references :Department, index: true, foreign_key: true
+
+      t.timestamps null: false
+    end
+  end
+end

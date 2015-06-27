@@ -1,0 +1,61 @@
+<%= form_for(@employee) do |f| %>
+  <% if @employee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+      <ul>
+      <% @employee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Firstname %><br>
+    <%= f.text_field :Firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :Lastname %><br>
+    <%= f.text_field :Lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :Address %><br>
+    <%= f.text_field :Address %>
+  </div>
+  <div class="field">
+    <%= f.label :City %><br>
+    <%= f.text_field :City %>
+  </div>
+  <div class="field">
+    <%= f.label :Province %><br>
+    <%= f.text_field :Province %>
+  </div>
+  <div class="field">
+    <%= f.label :Postalcode %><br>
+    <%= f.number_field :Postalcode %>
+  </div>
+  <div class="field">
+    <%= f.label :Country %><br>
+    <%= f.text_field :Country %>
+  </div>
+  <div class="field">
+    <%= f.label :Phone %><br>
+    <%= f.number_field :Phone %>
+  </div>
+  <div class="field">
+    <%= f.label :Email %><br>
+    <%= f.text_field :Email %>
+  </div>
+  <div class="field">
+    <%= f.label :Salary %><br>
+    <%= f.number_field :Salary %>
+  </div>
+  <div class="field">
+    <%= f.label :department_id %><br>
+    <%= f.text_field :department_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

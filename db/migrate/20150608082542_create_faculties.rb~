@@ -1,0 +1,17 @@
+class CreateFaculties < ActiveRecord::Migration
+  def change
+    create_table :faculties do |t|
+      t.string :FirstName
+      t.string :LastName
+      t.string :Designation
+      t.string :Specialty
+      t.string :Subjects
+      t.integer :Classes
+      t.integer:Contact
+      t.references :Department, index: true, foreign_key: true
+      t.references :Employees, index: true, foreign_key: true
+
+      t.timestamps null: false
+   end
+ end
+end

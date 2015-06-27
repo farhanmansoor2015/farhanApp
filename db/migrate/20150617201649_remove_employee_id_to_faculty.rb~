@@ -1,0 +1,6 @@
+class RemoveEmployeeIdToFaculty < ActiveRecord::Migration
+  def change
+    remove_column :faculties, :employee_id, :string
+    remove_column :faculties,  :employee_id,:integer
+  end
+end

@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @student.Firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @student.Lastname %>
+</p>
+
+<p>
+  <strong>Registration:</strong>
+  <%= @student.Registration %>
+</p>
+
+<p>
+  <strong>Nic:</strong>
+  <%= @student.Nic %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @student.Address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @student.City %>
+</p>
+
+<p>
+  <strong>Province:</strong>
+  <%= @student.Province %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @student.District %>
+</p>
+
+<p>
+  <strong>Education:</strong>
+  <%= @student.Education %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @student.Contact %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @student.Email %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @student.department.Name%>
+</p>
+
+<p>
+  <strong>Admission:</strong>
+  <%= @student.admission.Firstname %>
+</p>
+
+<p>
+  <strong>Degree:</strong>
+  <%= @student.degree.Name %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @student.subject.Name%>
+</p>
+
+<p>
+  <strong>Faculty:</strong>
+  <%= @student.faculty_id %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

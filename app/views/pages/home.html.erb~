@@ -1,0 +1,3 @@
+<head>
+<br><br><br><br><br><br><bottom><br><title><%= @title %></title></bottom></br></br></br></br></br></br></br>
+</head>

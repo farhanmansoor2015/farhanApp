@@ -1,0 +1,18 @@
+<html>
+<head>
+<title><%= @title %></title>
+<%=csrf_meta_tag %>
+<%= render'layouts/stylesheets'%>
+<%= render'layouts/header'%>
+</head>
+<body>
+<div class="container">
+<br><center><%=image_tag("UoB.jpg",:alt =>"rails app",:class  => "round") %></center>
+<section class="round"></br>
+<%= yield %>
+</section>
+<%= render'layouts/footer'%>
+  </div>
+ </body>
+</html>
+<br><br><br><center><%=link_to "Sign up now!",'contactform',:class =>"signup_button round" %></center></br></br></br>

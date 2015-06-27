@@ -1,0 +1,5 @@
+class Admission < ActiveRecord::Base
+  belongs_to :department
+  belongs_to :degree
+  validates :contact,length:{maximum:20}
+end

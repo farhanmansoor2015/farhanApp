@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @department.Name %>
+</p>
+
+<p>
+  <strong>Chairman:</strong>
+  <%= @department.Chairman %>
+</p>
+
+<p>
+  <strong>Examiner:</strong>
+  <%= @department.Examiner %>
+</p>
+
+<p>
+  <strong>Resultmaker:</strong>
+  <%= @department.Resultmaker %>
+</p>
+
+<p>
+  <strong>Classes:</strong>
+  <%= @department.Classes %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @department.Email %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @department.Contact %>
+</p>
+
+<p>
+  <strong>Fax:</strong>
+  <%= @department.fax %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_department_path(@department) %> |
+<%= link_to 'Back', departments_path %>
