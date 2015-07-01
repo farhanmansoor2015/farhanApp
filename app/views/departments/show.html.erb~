@@ -35,12 +35,9 @@
   <%= @department.Contact %>
 </p>
 
-<p>
-  <strong>Fax:</strong>
-  <%= @department.Fax %>
-</p>
 
 
 
+<div style="padding-left:45%; font-size:16px;">
 <%= link_to 'Edit', edit_department_path(@department) %> |
 <%= link_to 'Back', departments_path %>

@@ -40,10 +40,6 @@
     <%= f.number_field :Contact %>
   </div>
 
- <div class="field">
-    <%= f.label :Fax %><br>
-    <%= f.number_field :Fax %>
-  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -65,10 +65,6 @@
   <%= @faculty.subject.Name %>
 </p>
 
-<p>
-  <strong>Employee:</strong>
-  <%= @faculty.employee_id%>
-</p>
 
 <%= link_to 'Edit', edit_faculty_path(@faculty) %> |
 <%= link_to 'Back', faculties_path %>

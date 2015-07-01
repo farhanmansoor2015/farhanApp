@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  resources :students
+
+  resources :faculties
+
+  resources :subjects
+
+  resources :admissions
+
+  resources :employees
+
+  resources :degrees
+
+  resources :departments
+
   get 'pages/contact'
 
   get 'pages/about'
@@ -9,14 +23,14 @@ Rails.application.routes.draw do
 
   get 'pages/signin'
 
-  get 'pages/new'
+  get 'pages/contactform'
 
-  get'/contact',:to =>'pages#contact'
+
   get'/about',:to =>'pages#about'
   get'/help',:to =>'pages#help'
   get'/home',:to =>'pages#home'
   get'/signin',:to =>'pages#signin'
-  get'/new',:to =>'pages#new'
+  get'/contactform',:to =>'pages#contactform'
 
 
   root :to =>'pages#home'

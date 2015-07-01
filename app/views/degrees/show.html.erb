@@ -20,5 +20,10 @@
   <%= @degree.department.Name %>
 </p>
 
+<p>
+  <strong>Duration:</strong>
+  <%= @degree.duration %>
+</p>
+<div style="padding-left:45%; font-size:16px;">
 <%= link_to 'Edit', edit_degree_path(@degree) %> |
 <%= link_to 'Back', degrees_path %>

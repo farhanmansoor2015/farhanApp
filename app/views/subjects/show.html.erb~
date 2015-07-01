@@ -17,7 +17,7 @@
 
 <p>
   <strong>Department:</strong>
-  <%= @subject.department %>
+  <%= @subject.department.Name %>
 </p>
 
 <%= link_to 'Edit', edit_subject_path(@subject) %> |

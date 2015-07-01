@@ -52,7 +52,7 @@
 
 <p>
   <strong>Department:</strong>
-  <%= @employee.department %>
+  <%= @employee.department.Name %>
 </p>
 
 <%= link_to 'Edit', edit_employee_path(@employee) %> |

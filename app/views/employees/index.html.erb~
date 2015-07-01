@@ -33,7 +33,7 @@
         <td><%= employee.Phone %></td>
         <td><%= employee.Email %></td>
         <td><%= employee.Salary %></td>
-        <td><%= employee.department %></td>
+        <td><%= employee.department.Name %></td>
         <td><%= link_to 'Show', employee %></td>
         <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
         <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>

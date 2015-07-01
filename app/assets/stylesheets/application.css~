@@ -13,4 +13,68 @@
  *= require_tree .
  *= require_self
  */
- background-image: image_path('logo.png'); /* --> dynamically renders the fingerprinted path */
+
+ body {
+    background-color: #b0c4de;
+}
+h1 {
+    background-color: #6495ed;
+}
+
+p {
+    background-color: #e0ffff;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+th {
+    text-align: center;
+}
+td {
+    padding: 15px;
+}
+table, td, th {
+    border: 1px solid green;
+}
+
+th {
+    background-color: green;
+    color: white;
+}
+header {
+ 	color: white;
+ 	width: 100%;
+ 	line-height: 50px;
+ 	background-color: gray;
+ 	text-align: center;
+ }
+
+ mainnav {
+ 	padding-left: 45%;
+ }
+
+ footer {
+ 	color: white;
+ 	width: 100%;
+ 	line-height: 30px;
+ 	background-color: #6495ed;
+ 	text-align: center;
+ 	margin-top: 50px;
+ }
+.nav {
+	text-align:center;
+	line-height:30px;
+	background-color: #6495ed;
+
+ }
+.nav,ul,li, a{
+text-decoration: none;
+	color:white;}

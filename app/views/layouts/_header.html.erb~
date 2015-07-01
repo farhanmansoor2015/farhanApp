@@ -2,7 +2,8 @@
 <nav  class="round">
 <ul>
 <align_top><li><%= link_to "Home",home_path %>
-    <li><%= link_to "Department",Department%>
+    <li><%= link_to "Department"%>
+     <li><%= link_to "Admission",Admission%>
     <li><%= link_to "Degree",Degree %>
     <li><%= link_to "Employee",Employee%>
     <li><%= link_to "Faculty",Faculty%>

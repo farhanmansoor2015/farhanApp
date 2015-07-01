@@ -19,7 +19,7 @@
         <td><%= subject.Name %></td>
         <td><%= subject.Credits %></td>
         <td><%= subject.Incharge %></td>
-        <td><%= subject.department %></td>
+        <td><%= subject.department.Name %></td>
         <td><%= link_to 'Show', subject %></td>
         <td><%= link_to 'Edit', edit_subject_path(subject) %></td>
         <td><%= link_to 'Destroy', subject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Subject', new_subject_path %>
+<%= link_to 'New Subject',new_subject_path %>

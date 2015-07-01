@@ -52,7 +52,7 @@
 
 <p>
   <strong>Degree:</strong>
-  <%= @admission.degree %>
+  <%= @admission.degree.Name %>
 </p>
 
 <%= link_to 'Edit', edit_admission_path(@admission) %> |

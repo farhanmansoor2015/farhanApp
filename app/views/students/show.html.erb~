@@ -77,7 +77,7 @@
 
 <p>
   <strong>Faculty:</strong>
-  <%= @student.faculty_id %>
+  <%= @student.faculty.Firstname%>
 </p>
 
 <%= link_to 'Edit', edit_student_path(@student) %> |

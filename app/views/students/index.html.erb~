@@ -43,7 +43,7 @@
         <td><%= student.admission.Firstname%></td>
         <td><%= student.degree.Name%></td>
         <td><%= student.subject.Name%></td>
-        <td><%= student.faculty_id%></td>
+        <td><%= student.faculty.Firstname%></td>
         <td><%= link_to 'Show', student %></td>
         <td><%= link_to 'Edit', edit_student_path(student) %></td>
         <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
