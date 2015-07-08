@@ -38,7 +38,7 @@
         <td><%= faculty.Email %></td>
         <td><%= faculty.department.Name %></td>
         <td><%= faculty.degree.Name %></td>
-        <td><%= faculty.subject.Name %></td>
+        <td><%= faculty.subject_id %></td>
         <td><%= link_to 'Show', faculty %></td>
         <td><%= link_to 'Edit', edit_faculty_path(faculty) %></td>
         <td><%= link_to 'Destroy', faculty, method: :delete, data: { confirm: 'Are you sure?' } %></td>

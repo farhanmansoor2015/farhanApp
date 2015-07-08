@@ -32,8 +32,8 @@
         <td><%= admission.Province %></td>
         <td><%= admission.District %></td>
         <td><%= admission.Lastdegree %></td>
-        <td><%= admission.department.Name%></td>
-        <td><%= admission.degree.Name%></td>
+        <td><%= admission.department_id%></td>
+        <td><%= admission.degree_id%></td>
         <td><%= link_to 'Show', admission %></td>
         <td><%= link_to 'Edit', edit_admission_path(admission) %></td>
         <td><%= link_to 'Destroy', admission, method: :delete, data: { confirm: 'Are you sure?' } %></td>
