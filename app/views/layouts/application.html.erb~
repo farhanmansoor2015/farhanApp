@@ -4,6 +4,7 @@
 <title><%= @title %></title>
 <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 <%=csrf_meta_tag %>
+
 <%= render'layouts/stylesheets'%>
 <%= render'layouts/header'%>
 </head>
