@@ -9,11 +9,7 @@ background:            #3F75A2;
 table, th, td {
    border: 1px solid  blue;
 }
- <style type="text/css">
-		  h1 {font-size: 30px; font-family: arial;}
-		  h2 {font-size: 15px; font-family: courier;}
-		  p {font-size: 8px; font-family: "times new roman";}
-	  </style>
+
 header            {
 padding-top:           8px;
 }

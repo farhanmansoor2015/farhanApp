@@ -1,8 +1,8 @@
 <header>
 <nav  class="round">
 <ul>
-<align_top><li><%= link_to "Home",home_path %>
-    <li><%= link_to "Department"%>
+<align_left><li><%= link_to "Home",home_path %>
+    <li><%= link_to "Department",Department%>
      <li><%= link_to "Admission",Admission%>
     <li><%= link_to "Degree",Degree %>
     <li><%= link_to "Employee",Employee%>
@@ -11,7 +11,7 @@
     <li><%= link_to "Subject",Subject%>
     <li><%= link_to "Help",help_path %>
 <li><%= link_to "Sign in",signin_path %>
-<li><%= link_to "Sign up",contactform_path %></align_top>
+<li><%= link_to "Sign up",contactform_path %></align_left>
 </ul>
 </nav>
 </header>

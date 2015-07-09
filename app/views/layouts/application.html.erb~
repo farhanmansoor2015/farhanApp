@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
-<br><center><%=image_tag("UoB.jpg",:alt =>"rails app",:class  => "round") %></center>
+<br><br><br><center><%=image_tag("UoB.jpg",:alt =>"rails app",:class  => "round") %></center>
 <section class="round"></br>
 <%= yield %>
 </section>
@@ -19,3 +19,8 @@
  </body>
 </html>
 <br><br><br><center><%=link_to "Sign up now!",'contactform',:class =>"signup_button round" %></center></br></br></br>
+ <style type="text/css">
+		  h1 {font-size: 30px; font-family: arial;}
+		  h2 {font-size: 15px; font-family: courier;}
+		  p {font-size: 8px; font-family: "times new roman";}
+	  </style>

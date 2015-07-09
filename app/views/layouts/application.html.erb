@@ -2,14 +2,15 @@
 <html>
 <head>
 <title><%= @title %></title>
-
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<%=csrf_meta_tag %>
 
 <%= render'layouts/stylesheets'%>
 <%= render'layouts/header'%>
 </head>
 <body>
 <div class="container">
-<br><center><%=image_tag("UoB.jpg",:alt =>"rails app",:class  => "round") %></center>
+<br><br><br><center><%=image_tag("UoB.jpg",:alt =>"rails app",:class  => "round") %></center>
 <section class="round"></br>
 <%= yield %>
 </section>
