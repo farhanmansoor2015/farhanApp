@@ -10,17 +10,18 @@ table, th, td {
    border: 1px solid  blue;
 }
 
-header            {
-padding-top:           8px;
+header  {
+  padding-top: 8px;
 }
 
-header            img            {
-padding:            1em;
-background:            #2F4F4F;
+
+header  img {
+  padding:  1em;
+  background: #2F4F4F;
 }
 
-footer     {
-padding:     -3em;
+footer  {
+  padding:  -3em;
 }
 
 section {
@@ -78,34 +79,4 @@ color:            #09c;
 }
 nav            ul            li            a:hover            {
 text-decoration:            underline;
-}
-/*            Sign            up            button            */
-a.signup_button            {
-margin-left:            auto;
-margin-right:            auto;
-display:            block;
-text-align:            center;
-width:            190px;
-color:            #4682B4;
-background:            #ADD8E6;
-font-size:            120%;
-font-weight:            bold;
-padding:            20px;
-}
-/*            Round            corners            */
-.round            {
--moz-border-radius:            10px;
--webkit-border-radius:            10px;
-border-radius:            10px;
-}
-footer            {
-text-align:            center;
-margin-top:            10px;
-width:            710px;
-margin-left:            auto;
-margin-right:            0;
-}
-
-footer            nav            {
-float:            right;
 }
