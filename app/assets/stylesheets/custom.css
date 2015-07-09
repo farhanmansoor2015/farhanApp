@@ -39,18 +39,6 @@ section h1 {
 }
 
 
-/*            Links            */
-a            {
-color:            #09c;
-text-decoration:            none;
-}
-a:hover            {
-color:            #069;
-text-decoration:            underline;
-}
-a:visited            {
-color:            #069;
-}
 
 
 /*            Navigation            */
