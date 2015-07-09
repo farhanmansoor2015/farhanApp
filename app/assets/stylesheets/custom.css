@@ -39,37 +39,20 @@ section h1 {
 }
 
 
-
-
-/*            Navigation            */
-nav            {
-float:            right;
-}
-nav            {
-background-color:            #ADD8E6;
-padding:            2.5            -5em;
-white-space:            nowrap;
-}
-nav            ul            {
-margin:            0;
-padding:           ;
-}
-nav            ul            li            {
-list-style-type:            none;
-display:            inline-block;
-padding:            0.2em            0;
-}
-nav            ul            li            a            {
-padding:            0            5px;
-font-weight:            bold;
-}
-nav            ul            li            a:visited            {
-color:            #09c;
-}
-nav            ul            li            a:hover            {
-text-decoration:            underline;
+/*            Links            */
+a {
+  color:  #09c;
+  text-decoration:  none;
 }
 
+a:hover {
+  color:  #069;
+  text-decoration:  underline;
+}
+
+a:visited {
+  color:  #069;
+}
 
 
 /*            Sign            up            button            */
