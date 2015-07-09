@@ -57,13 +57,13 @@ a:visited {
 
 /*            Navigation            */
 
-</>
+<
 /* Navigation */
 nav {
 float: right;
 }
 nav {
-background-color: #00ff7f;;
+background-color: #ADD8E6;
 padding: 0 0.7em;
 white-space: nowrap;
 }
