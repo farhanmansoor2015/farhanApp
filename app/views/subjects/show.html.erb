@@ -19,6 +19,17 @@
   <strong>Department:</strong>
   <%= @subject.department.Name %>
 </p>
+
+<p>
+  <strong>Session:</strong>
+  <%= @subject.session %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @subject.end %>
+</p>
+
 <div style="padding-left:45%; font-size:16px;">
 <%= link_to 'Edit', edit_subject_path(@subject) %> |
 <%= link_to 'Back', subjects_path %>

@@ -9,6 +9,8 @@
       <th>Credits</th>
       <th>Incharge</th>
       <th>Department</th>
+      <th>Session_Start</th>
+      <th>Session_End</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +22,8 @@
         <td><%= subject.Credits %></td>
         <td><%= subject.Incharge %></td>
         <td><%= subject.department.Name %></td>
+        <td><%= subject.session %></td>
+        <td><%= subject.end %></td>
         <td><%= link_to 'Show', subject %></td>
         <td><%= link_to 'Edit', edit_subject_path(subject) %></td>
         <td><%= link_to 'Destroy', subject, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -31,10 +31,6 @@
     <%= f.label :Session %><br>
     <%= f.date_select:session %>
   </div>
-   <div class="field">
-    <%= f.label :End %><br>
-    <%= f.date_select:end %>
-  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
