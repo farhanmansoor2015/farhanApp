@@ -55,9 +55,9 @@ ActiveRecord::Schema.define(version: 20150715125556) do
     t.integer  "Classes"
     t.string   "Email"
     t.integer  "Contact"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.string   "fax"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "fax",         limit: 50
   end
 
   create_table "employees", force: :cascade do |t|
