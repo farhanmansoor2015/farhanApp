@@ -11,8 +11,6 @@ Rails.application.routes.draw do
 
   resources :degrees
 
-  resources :departments
-
   get 'pages/contact'
 
   get 'pages/about'
