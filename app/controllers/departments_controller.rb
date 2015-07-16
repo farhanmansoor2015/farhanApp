@@ -5,7 +5,6 @@ class DepartmentsController < ApplicationController
   # GET /departments.json
   def index
     @departments = Department.all
-
   end
 
   # GET /departments/1
@@ -44,13 +43,14 @@ class DepartmentsController < ApplicationController
     respond_to do |format|
       if @department.update(department_params)
         format.html { redirect_to @department, notice: 'Department was successfully updated.' }
-        format.json { render :show, status: :ok, location: @Department }
+        format.json { render :show, status: :ok, location: @department }
       else
         format.html { render :edit }
         format.json { render json: @department.errors, status: :unprocessable_entity }
       end
     end
   end
+
   # DELETE /departments/1
   # DELETE /departments/1.json
   def destroy
@@ -69,6 +69,6 @@ class DepartmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def department_params
-      params.require(:department).permit(:Name, :Chairman, :Examiner, :Resultmaker, :Classes, :Email, :Contact,:fax)
+      params.require(:department).permit(:name, :Chairperson, :Contact, :Email, :Fax)
     end
 end

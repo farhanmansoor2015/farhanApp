@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150715184148) do
+ActiveRecord::Schema.define(version: 20150716214049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,13 +48,11 @@ ActiveRecord::Schema.define(version: 20150715184148) do
   add_index "degrees", ["department_id"], name: "index_degrees_on_department_id", using: :btree
 
   create_table "departments", force: :cascade do |t|
-    t.string   "Name"
-    t.string   "Chairman"
-    t.string   "Examiner"
-    t.string   "Resultmaker"
-    t.integer  "Classes"
+    t.string   "name"
+    t.string   "Chairperson"
+    t.string   "Contact"
     t.string   "Email"
-    t.integer  "Contact"
+    t.string   "Fax"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
@@ -140,16 +138,10 @@ ActiveRecord::Schema.define(version: 20150715184148) do
   add_index "subjects", ["department_id"], name: "index_subjects_on_department_id", using: :btree
 
   add_foreign_key "admissions", "degrees"
-  add_foreign_key "admissions", "departments"
-  add_foreign_key "degrees", "departments"
-  add_foreign_key "employees", "departments"
   add_foreign_key "faculties", "degrees"
-  add_foreign_key "faculties", "departments"
   add_foreign_key "faculties", "subjects"
   add_foreign_key "students", "admissions"
   add_foreign_key "students", "degrees"
-  add_foreign_key "students", "departments"
   add_foreign_key "students", "faculties"
   add_foreign_key "students", "subjects"
-  add_foreign_key "subjects", "departments"
 end

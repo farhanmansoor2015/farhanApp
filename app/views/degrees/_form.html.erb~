@@ -29,7 +29,7 @@
   </div>
 
    <div class="field">
-    <%= f.label :duration %><br>
+    <%= f.label :Duration %><br>
     <%= f.text_field :duration %>
   </div>
   <div class="actions">
