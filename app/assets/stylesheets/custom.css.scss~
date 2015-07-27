@@ -78,7 +78,6 @@ padding: 0.2em 0;
 }
 nav ul li a {
 padding: 0 5px;
-font-size: 130%;
 font-weight: bold;
 }
 nav ul li a:visited {
@@ -90,7 +89,7 @@ text-decoration: underline;
 
 
 /*            Sign            up            button            */
-signup_button            {
+a.signup_button            {
 margin-left:            auto;
 margin-right:            auto;
 display:            block;
@@ -100,7 +99,7 @@ color:            #4682B4;
 background:            #ADD8E6;
 font-size:            120%;
 font-weight:            bold;
-padding:           50px;
+padding:            20px;
 }
 /*            Round            corners            */
 .round            {

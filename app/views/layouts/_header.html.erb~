@@ -1,7 +1,8 @@
 <header>
 <nav  class="round">
+<%= image_tag("Uob.jpg")%>
 <ul>
-<align_left><li><%= link_to "Home",home_path %>
+<align_top><li><%= link_to "Home",home_path %>
     <li><%= link_to "Department",Department%>
      <li><%= link_to "Admission",Admission%>
     <li><%= link_to "Degree",Degree %>
@@ -11,7 +12,7 @@
     <li><%= link_to "Subject",Subject%>
     <li><%= link_to "Help",help_path %>
 <li><%= link_to "Sign in",signin_path %>
-<li><%= link_to "Sign up",contactform_path %></align_left>
+<li><%= link_to "Sign up",contactform_path %></align_top>
 </ul>
 </nav>
 </header>
