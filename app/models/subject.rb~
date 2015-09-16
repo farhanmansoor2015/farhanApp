@@ -1,0 +1,4 @@
+class Subject < ActiveRecord::Base
+  belongs_to :department
+   validates :name,length:{maximum:7}
+end

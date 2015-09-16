@@ -1,0 +1,20 @@
+class CreateEmployees < ActiveRecord::Migration
+  def change
+    create_table :employees do |t|
+      t.string :FirstName
+      t.string :LastName
+      t.integer:Hiredate
+      t.string :Address
+      t.string :City
+      t.string :Province
+      t.integer :PostalCode
+      t.string :Country
+      t.integer :PhoneNumber
+      t.string :Email
+      t.integer :Salary
+      t.references :Department, index: true, foreign_key: true
+
+      t.timestamps null: false
+    end
+  end
+end

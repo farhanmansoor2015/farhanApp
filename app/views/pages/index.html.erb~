@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+    <head>
+        <title>TextBox with Search Icon in HTML and CSS - Tutorial from www.codeofaninja.com</title>
+    </head>
+<body>
+<input type='text' placeholder='Search...' id='search-text-input' />
+<div id='button-holder'>
+    <img src='gnome-search-tool.png' />
+</div>
+</body>
+</html>

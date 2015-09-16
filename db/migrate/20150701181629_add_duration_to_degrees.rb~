@@ -1,0 +1,5 @@
+class AddDurationToDegrees < ActiveRecord::Migration
+  def change
+    add_column :degrees, :duration, :string
+  end
+end

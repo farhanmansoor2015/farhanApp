@@ -1,0 +1,19 @@
+class CreateStudents < ActiveRecord::Migration
+  def change
+    create_table :students do |t|
+      t.string :FirstName
+      t.string :LastName
+      t.string :Address
+      t.string :City
+      t.string :Province
+      t.integer :PostalCode
+      t.string :Country
+      t.integer :PhoneNumber
+      t.string :Email
+      t.integer :GraduationYear
+      t.references :Department, index: true, foreign_key: true
+
+      t.timestamps null: false
+      end
+  end
+end
