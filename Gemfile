@@ -34,6 +34,7 @@ gem 'puma', '2.11.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem'rails_12factor', group: :production
 gem 'carrierwave', '0.10.0'
 gem 'mini_magick', '3.8.0'
 gem 'fog', '1.23.0'
