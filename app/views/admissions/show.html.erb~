@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @admission.Firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @admission.Lastname %>
+</p>
+
+<p>
+  <strong>Registration:</strong>
+  <%= @admission.Registration %>
+</p>
+
+<p>
+  <strong>Nic:</strong>
+  <%= @admission.Nic %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @admission.Address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @admission.City %>
+</p>
+
+<p>
+  <strong>Province:</strong>
+  <%= @admission.Province %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @admission.District %>
+</p>
+
+<p>
+  <strong>Lastdegree:</strong>
+  <%= @admission.Lastdegree %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @admission.department.Name %>
+</p>
+
+<p>
+  <strong>Degree:</strong>
+  <%= @admission.degree.Name %>
+</p>
+<div style="padding-left:45%; font-size:16px;">
+<%= link_to 'Edit', edit_admission_path(@admission) %> |
+<%= link_to 'Back', admissions_path %>

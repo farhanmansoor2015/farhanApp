@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -211,6 +212,164 @@ font-size: 40px;
 <input type="checkbox" name="checkbox1" id="checkbox1" class="ios-toggle" checked/>
 <label for="checkbox1" class="checkbox-label" data-off="" data-on=""></label>
 <input type="button" name="login"value="Login">
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Sahil Kumar">
+<title>Login</title>
+<style type="text/css">
+*{
+margin: 0;
+padding: 0;
+font-family: helvetica;
+}
+‪#‎main‬{
+position: relative;
+margin: 0 auto;
+width: 100%;
+height: auto;
+padding-top: 100px;
+padding-bottom: 100px;
+background: linear-gradient(‪#‎A0FB71‬,‪#‎EBFF33‬);
+}
+‪#‎login‬-box{
+position: relative;
+margin: 0 auto;
+width: 400px;
+height: auto;
+}
+‪#‎header‬{
+position: relative;
+width: 400px;
+height: 150px;
+background-color: ‪#‎3EC303‬;
+text-align: center;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+box-shadow: 0 0 2px #444;
+}
+#header h3{
+padding-top: 15px;
+color: ‪#‎fff‬;
+text-shadow:1px 1px 1px black;
+font-size: 25px;
+}
+‪#‎lock‬{
+position: relative;
+margin: 10px auto;
+width: 75px;
+height: 75px;
+border-radius: 100%;
+background-color: #EBFF33;
+box-shadow: 0 0 2px #555;
+}
+#lock img{
+margin-top: 8px;
+width: 40px;
+height: 50px;
+}
+‪#‎content‬{
+position: relative;
+width: 320px;
+padding-left: 40px;
+padding-right: 40px;
+padding-bottom: 30px;
+padding-top: 10px;
+height: auto;
+background-color: white;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+box-shadow: 0 0 2px #444;
+}
+.input{
+width: 305px;
+height: 25px;
+padding: 5px;
+padding-left: 5px;
+margin-top: 20px;
+background-color: ‪#‎faffaa‬;
+border: 1px solid green;
+border-radius: 2px;
+font-weight: bolder;
+font-style: italic;
+color: #666;
+}
+.input:focus{
+outline: none;
+box-shadow: 0 0 2px green;
+}
+::-webkit-input-placeholder{
+font-style: italic;
+color: #777;
+}
+.input2{
+width: 18px;
+height: 18px;
+margin-top: 20px;
+}
+span{
+font-weight: bolder;
+margin-left: 8px;
+color: #666;
+position: absolute;
+margin-top: 20px;
+font-size: 15px;
+}
+.submit{
+width: 317px;
+height: 33px;
+margin-top: 15px;
+border-radius: 2px;
+border: none;
+background-color: #3EC303;
+color: #fff;
+font-weight: bold;
+font-size: 16px;
+text-shadow:1px 1px 1px black;
+box-shadow: 1px 1px 1px #555;
+cursor: pointer;
+}
+.submit:hover{
+background-color: green;
+}
+#login-box p{
+font-weight: bolder;
+color: #444;
+line-height: 1.2;
+margin-top: 5px;
+font-size: 13px;
+}
+#login-box a{
+text-decoration: none;
+color: green;
+}
+#login-box a:hover{
+color: #666;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<div id="login-box">
+<div id="header">
+<h3>LOGIN</h3>
+<div id="lock">
+<img src="lock.png">
+</div>
+</div>
+<div id="content">
+<form method="POST" action="">
+<input type="text" name="username" class="input" placeholder="Username" required><br>
+<input type="password" name="password" class="input" placeholder="Password" required><br>
+<input type="checkbox" class="input2"><span>Keep me logged in</span><br>
+<input type="submit" class="submit" value="SIGN IN" name="submit">
+</form>
+</div>
+<p>Dont't have an account? <a href="#">Sign Up</a></p>
+<p>Forgot <a href="#">Password?</a></p>
+>>>>>>> b9e978125a1c39f2bd8903d6e35f568e2e103989
 </div>
 </div>
 </body>

@@ -1,3 +1,6 @@
-<h1>CONTACT</h1>
-<b><p>farhan.mansoor.qta@gmail.com</p>
-<p>University of Balochistan,Quetta</p></b><br><br><br><br></br></br></br></br>
+<% provide(:title, 'Contact') %>
+<h1>Contact</h1>
+<p>
+<center>Contact the Ruby on Rails Tutorial about the sample app at the
+<a href="http://www.railstutorial.org/#contact">contact page</a>.
+</p></center>

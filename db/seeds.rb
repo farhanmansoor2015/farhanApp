@@ -26,3 +26,4 @@ User.create!(name: name,
             activated_at: Time.zone.now)
 
 end
+

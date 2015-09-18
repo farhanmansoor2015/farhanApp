@@ -2,9 +2,10 @@
 
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
-Rails.application.config.assets.precompile += %w( blueprint/print.css.scss )
-Rails.application.config.assets.precompile += %w( blueprint/screen.css.sass )
-Rails.application.config.assets.precompile += %w( custom.css.sass )
+Rails.application.config.assets.precompile += %w( blueprint/print.css )
+Rails.application.config.assets.precompile += %w( blueprint/screen.css )
+Rails.application.config.assets.precompile += %w( custom.css )
+
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
