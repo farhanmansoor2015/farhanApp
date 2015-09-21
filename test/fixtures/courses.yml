@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coursecode: MyString
+  name: MyString
+  description: MyString
+  objectives: MyString
+  offersemester: MyString
+  program_id: 
+
+two:
+  coursecode: MyString
+  name: MyString
+  description: MyString
+  objectives: MyString
+  offersemester: MyString
+  program_id: 

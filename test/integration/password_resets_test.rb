@@ -64,6 +64,7 @@ patch password_reset_path(user.reset_token),
 email: user.email,
 user: { password: "foobaz",
 password_confirmation: "foobaz" }
+
 assert is_logged_in?
 assert_not flash.empty?
 assert_redirected_to user
