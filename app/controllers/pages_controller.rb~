@@ -1,25 +1,16 @@
 class PagesController < ApplicationController
-  def home
-    @title = "Home"
-  end
 
-  def contact
-     @title = "Contact"
-  end
+def home
+  @micropost = current_user.microposts.build if logged_in?
 
-  def about
-     @title = "About"
-  end
+end
 
-  def help
-     @title = "Help"
-   end
+def help
+end
 
-  def signin
-     @title = "Signin"
+def about
+end
 
-  def contactform
-     @title = "Contact form"
-  end
-  end
-  end
+def contact
+end
+end

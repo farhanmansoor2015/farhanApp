@@ -1,0 +1,49 @@
+require 'test_helper'
+
+class TeachassignsControllerTest < ActionController::TestCase
+  setup do
+    @teachassign = teachassigns(:one)
+  end
+
+  test "should get index" do
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:teachassigns)
+  end
+
+  test "should get new" do
+    get :new
+    assert_response :success
+  end
+
+  test "should create teachassign" do
+    assert_difference('Teachassign.count') do
+      post :create, teachassign: { course_id: @teachassign.course_id, faculty_id: @teachassign.faculty_id, semester_id: @teachassign.semester_id, session__id: @teachassign.session__id }
+    end
+
+    assert_redirected_to teachassign_path(assigns(:teachassign))
+  end
+
+  test "should show teachassign" do
+    get :show, id: @teachassign
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get :edit, id: @teachassign
+    assert_response :success
+  end
+
+  test "should update teachassign" do
+    patch :update, id: @teachassign, teachassign: { course_id: @teachassign.course_id, faculty_id: @teachassign.faculty_id, semester_id: @teachassign.semester_id, session__id: @teachassign.session__id }
+    assert_redirected_to teachassign_path(assigns(:teachassign))
+  end
+
+  test "should destroy teachassign" do
+    assert_difference('Teachassign.count', -1) do
+      delete :destroy, id: @teachassign
+    end
+
+    assert_redirected_to teachassigns_path
+  end
+end

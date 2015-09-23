@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @att_detail.status %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @att_detail.student %>
+</p>
+
+<p>
+  <strong>Att master:</strong>
+  <%= @att_detail.att_master %>
+</p>
+
+<%= link_to 'Edit', edit_att_detail_path(@att_detail) %> |
+<%= link_to 'Back', att_details_path %>

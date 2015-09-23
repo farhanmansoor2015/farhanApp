@@ -1,0 +1,37 @@
+<%= form_for(@att_master) do |f| %>
+  <% if @att_master.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@att_master.errors.count, "error") %> prohibited this att_master from being saved:</h2>
+
+      <ul>
+      <% @att_master.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :topics %><br>
+    <%= f.text_field :topics %>
+  </div>
+  <div class="field">
+    <%= f.label :date_marked %><br>
+    <%= f.date_select :date_marked %>
+  </div>
+  <div class="field">
+    <%= f.label :course_id %><br>
+    <%= f.text_field :course_id %>
+  </div>
+  <div class="field">
+    <%= f.label :teachassign_id %><br>
+    <%= f.text_field :teachassign_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

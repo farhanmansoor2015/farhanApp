@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Att Masters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Topics</th>
+      <th>Date marked</th>
+      <th>Course</th>
+      <th>Teachassign</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @att_masters.each do |att_master| %>
+      <tr>
+        <td><%= att_master.date %></td>
+        <td><%= att_master.topics %></td>
+        <td><%= att_master.date_marked %></td>
+        <td><%= att_master.course %></td>
+        <td><%= att_master.teachassign %></td>
+        <td><%= link_to 'Show', att_master %></td>
+        <td><%= link_to 'Edit', edit_att_master_path(att_master) %></td>
+        <td><%= link_to 'Destroy', att_master, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Att master', new_att_master_path %>

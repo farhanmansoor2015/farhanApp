@@ -1,9 +1,14 @@
 <div class="center jumbotron">
-<h1>Welcome to the FARHAN APPLICATION</h1>
+<h1>Student Attendance Management System </h1>
+<p><br>
+Student Attendance Management System makes it easy to maintain student information,course,student enrollment and all details of student related . It deals with student information, faculty information  for students in each course and semesters of the department of computer science and information technology, university of Balochistan.
+In computer science department every year four new sessions are commenced with four and eight semesters respectively and often time the department strength stands around 700 students. In each semester different courses are taught by a assigned faculty members.This all needs lot of work to do, in which preparing the record for Department is not easy task. It is the need of hour to develop and online automated system for student using modern open source tools such as Ruby on Rails, Postgresql and jQuery. I am also motivated by the fact that nowadays flexible data entry, manipulation and visualization for online system is possible due to modern tools but it is often difficult to find a free one that implements efficiently the data grids, user-interface components such as data bound combo boxes, trees, and local sorting and filtering, with AJAX.
+Our proposed system will take less time to compile and save the record in respective method of system. It will also create new information for students and faculty in the department. Student Management system makes easy to maintain student information, course detail, student enrollment and Attendance record. The primary objective is to eliminate the paper list method, with less cost and for save of time for students to prepare themselves for next semester.
+</p></br>
 <h2>
 This is the home page for the
 <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-Farhan Application.
+Farhan Application
 </h2>
 <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>

@@ -1,0 +1,49 @@
+require 'test_helper'
+
+class SessionSControllerTest < ActionController::TestCase
+  setup do
+    @session_ = session_s(:one)
+  end
+
+  test "should get index" do
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:session_s)
+  end
+
+  test "should get new" do
+    get :new
+    assert_response :success
+  end
+
+  test "should create session_" do
+    assert_difference('Session.count') do
+      post :create, session_: { description: @session_.description, end: @session_.end, program_id: @session_.program_id, start: @session_.start, status: @session_.status }
+    end
+
+    assert_redirected_to session__path(assigns(:session_))
+  end
+
+  test "should show session_" do
+    get :show, id: @session_
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get :edit, id: @session_
+    assert_response :success
+  end
+
+  test "should update session_" do
+    patch :update, id: @session_, session_: { description: @session_.description, end: @session_.end, program_id: @session_.program_id, start: @session_.start, status: @session_.status }
+    assert_redirected_to session__path(assigns(:session_))
+  end
+
+  test "should destroy session_" do
+    assert_difference('Session.count', -1) do
+      delete :destroy, id: @session_
+    end
+
+    assert_redirected_to session_s_path
+  end
+end

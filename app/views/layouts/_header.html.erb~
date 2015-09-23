@@ -1,10 +1,11 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
 <div class="container">
-<%= link_to "FARHAN APP", root_path, id: "logo" %>
+<%= link_to "FARHAN APPLICATION", root_path, id: "logo" %>
 <nav>
 <ul class="nav navbar-nav navbar-right">
 <li><%= link_to "Home", root_path %></li>
 <li><%= link_to "Help", help_path %></li>
+
 <% if logged_in? %>
 <li><%= link_to "Users", users_path %></li>
 <li class="dropdown">
@@ -23,6 +24,23 @@ Account <b class="caret"></b>
 <% else %>
 <li><%= link_to "Log in", login_path %></li>
 <% end %>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+Student <b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li><%= link_to "Program", programs_path %></li>
+<li><%= link_to "Course",courses_path %></li>
+<li><%= link_to "Session",session_s_path %></li>
+<li><%= link_to "Semester",semesters_path %></li>
+<li><%= link_to "Faculty",faculties_path %></li>
+<li><%= link_to "Teach",teachassigns_path %></li>
+<li><%= link_to "Student",students_path %></li>
+<li><%= link_to "Course",courses_path %></li>
+<li><%= link_to "Student Reg",stu_reg_semesters_path %></li>
+<li><%= link_to "Attendence",att_masters_path %></li>
+<li class="divider"></li>
+</li>
 </ul>
 </nav>
 </div>
