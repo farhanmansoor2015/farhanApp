@@ -4,7 +4,7 @@ class SessionSController < ApplicationController
   # GET /session_s
   # GET /session_s.json
   def index
-    @session_s = Sessions_s.all
+    @session_s = Session_S.all
   end
 
   # GET /session_s/1

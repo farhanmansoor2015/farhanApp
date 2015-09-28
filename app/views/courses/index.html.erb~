@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+    <td>
       <th>Coursecode</th>
       <th>Name</th>
       <th>Description</th>
@@ -13,6 +14,7 @@
       <th>Program</th>
       <th colspan="3"></th>
     </tr>
+    
   </thead>
 
   <tbody>
@@ -29,6 +31,7 @@
         <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+   </td>
   </tbody>
 </table>
 

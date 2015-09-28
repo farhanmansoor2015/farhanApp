@@ -31,7 +31,7 @@ Student <b class="caret"></b>
 <ul class="dropdown-menu">
 <li><%= link_to "Program", programs_path %></li>
 <li><%= link_to "Course",courses_path %></li>
-<li><%= link_to "Session",session_s_path %></li>
+<li><%= link_to "Session",sessions_s_path %></li>
 <li><%= link_to "Semester",semesters_path %></li>
 <li><%= link_to "Faculty",faculties_path %></li>
 <li><%= link_to "Teach",teachassigns_path %></li>
@@ -39,6 +39,7 @@ Student <b class="caret"></b>
 <li><%= link_to "Course",courses_path %></li>
 <li><%= link_to "Student Reg",stu_reg_semesters_path %></li>
 <li><%= link_to "Attendence",att_masters_path %></li>
+<li><%= link_to "Attend Detail",att_details_path %></li>
 <li class="divider"></li>
 </li>
 </ul>
